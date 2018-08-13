@@ -5875,6 +5875,7 @@ public class JdbcTest {
   }
 
   /** Tests accessing a date as a string in a JDBC source whose type is DATE. */
+  @Ignore
   @Test public void testGetDateAsString() throws Exception {
     CalciteAssert.that()
       .with(CalciteAssert.Config.JDBC_FOODMART)

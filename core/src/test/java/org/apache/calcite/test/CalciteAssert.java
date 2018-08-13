@@ -1761,7 +1761,8 @@ public class CalciteAssert {
             + "/h2/target/foodmart;user=foodmart;password=foodmart",
             "foodmart", "foodmart", "org.h2.Driver", "foodmart"), null),
     MYSQL(
-        new ConnectionSpec("jdbc:mysql://localhost/foodmart", "foodmart",
+        new ConnectionSpec("jdbc:mysql://localhost/foodmart?"
+            + "zeroDateTimeBehavior=convertToNull", "foodmart",
             "foodmart", "com.mysql.jdbc.Driver", "foodmart"), null),
     ORACLE(
         new ConnectionSpec("jdbc:oracle:thin:@localhost:1521:XE", "foodmart",
